@@ -9,11 +9,13 @@ body {
   flex-direction: column;
 }
 
+/* Container to be used throughout site */
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
+/* Header styles */
 header {
   background-color: black;
 }
@@ -35,6 +37,7 @@ header span {
   margin: 0rem 0.66rem;
 }
 
+/* top of the page highlight section styles */
 .tophilite {
   width: 100%;
   background-image: url("../img/moto.jpeg");
@@ -62,6 +65,43 @@ header span {
   padding-top: 0.25rem;
 }
 
+/* Styles for screen sizes less then 1024px */
+@media only screen and (max-width: 1024px) {
+    .tophilite {
+      height: 20rem;
+    }
+
+    .tophilitecontent h3 {
+      font-size: 0.8rem;
+    }
+
+    .tophilitecontent h1 {
+      font-size: 1.6rem;
+    }
+} /* end 1024px screen size */
+
+/* styles for screen sizes less then 470px */
+@media only screen and (max-width: 470px){
+  .tophilite {
+    height: 15rem;
+  }
+
+  .tophilitecontent {
+    margin-top: 10rem;
+  }
+
+  .tophilitecontent h3 {
+    font-size: 0.77rem;
+  }
+
+  .tophilitecontent h1 {
+    font-size: 1rem;
+  }
+}
+
+
+/*===============================*/
+/* Red menu styles */
 .menu {
   background-color: firebrick;
 }
@@ -79,6 +119,22 @@ header span {
   padding-bottom: 0.75rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  span {
+    display:none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+/* ========================================*/
+/* product boxes */
 .boxes {
   margin-top: 3rem;
   margin-bottom: 4rem;
@@ -131,6 +187,40 @@ header span {
   margin: 0.2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .boxes .boxlarge {
+    width: 47%;
+  }
+
+  .boxes .boxsmall {
+    width: 35%;
+  }
+
+  .boxlarge.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .boxes .boxlarge {
+    width: 90%;
+  }
+
+  .boxes .boxsmall {
+    width: 90%;
+  }
+
+  .boxlarge.glasses {
+    display: none;
+  }
+
+  .boxlarge.watch {
+    display: none;
+  }
+}
+
+/*= ================================ */
+/* footer styles */
 footer {
   background-color: black;
   color: white;
@@ -138,7 +228,13 @@ footer {
 }
 
 footer .container {
-    height: 5em;
+    height: 15em;
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
 }
