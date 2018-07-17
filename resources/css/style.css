@@ -1,0 +1,144 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+
+header .content {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+}
+
+header img {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+
+header span {
+  margin: 0rem 0.66rem;
+}
+
+.tophilite {
+  width: 100%;
+  background-image: url("../img/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.tophilitecontent{
+  width: 20rem;
+  margin-top: 9rem;
+  color: white;
+  background-color: black;
+  padding: 2rem 3rem;
+}
+
+.tophilitecontent h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tophilitecontent h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 0.25rem;
+}
+
+.menu {
+  background-color: firebrick;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.menu span {
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.boxes {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+
+}
+
+.boxes .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.boxes .boxlarge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border: 4px solid black;
+}
+
+.boxes img {
+  height: 9rem;
+  width:9rem;
+  padding: 2rem;
+}
+
+.boxes .caption {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.boxes .boxsmall {
+  width: 35%;
+  align-self: flex-start;
+}
+
+.boxsmall .heading {
+  background-color: black;
+  color: white;
+  text-align: left;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+
+.boxsmall p {
+  margin: 0.2rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+footer .container {
+    height: 5em;
+    display: flex;
+    align-items: center;
+}
